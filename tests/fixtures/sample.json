@@ -1,0 +1,25 @@
+{
+  "name": "devtool",
+  "version": "0.1.0",
+  "description": "A CLI DevOps toolkit",
+  "authors": ["developer"],
+  "config": {
+    "timeout": 30,
+    "retries": 3,
+    "verbose": false
+  },
+  "features": [
+    "port-scanning",
+    "http-client",
+    "json-processing",
+    "docker-management",
+    "git-utilities",
+    "env-management",
+    "benchmarking",
+    "cron-utilities"
+  ],
+  "metadata": {
+    "created": "2024-01-01",
+    "tags": ["cli", "devops", "rust"]
+  }
+}

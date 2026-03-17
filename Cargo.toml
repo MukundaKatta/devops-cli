@@ -1,0 +1,76 @@
+[package]
+name = "devtool"
+version = "0.1.0"
+edition = "2021"
+description = "A complete CLI DevOps toolkit"
+license = "MIT"
+
+[[bin]]
+name = "devtool"
+path = "src/main.rs"
+
+[dependencies]
+# CLI
+clap = { version = "4", features = ["derive", "env"] }
+clap_complete = "4"
+
+# Async
+tokio = { version = "1", features = ["full"] }
+
+# HTTP
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+toml = "0.8"
+
+# TUI
+ratatui = "0.28"
+crossterm = "0.28"
+indicatif = "0.17"
+console = "0.15"
+
+# Crypto / Encoding
+base64 = "0.22"
+urlencoding = "2"
+sha2 = "0.10"
+md-5 = "0.10"
+sha1 = "0.10"
+aes-gcm = "0.10"
+rand = "0.8"
+hex = "0.4"
+
+# Error handling
+thiserror = "1"
+anyhow = "1"
+
+# Date/time
+chrono = "0.4"
+
+# System info
+sysinfo = "0.31"
+local-ip-address = "0.6"
+
+# Misc
+walkdir = "2"
+similar = "2"
+tabled = "0.16"
+qr2term = "0.3"
+warp = "0.3"
+cron = "0.12"
+colored_json = "4"
+syntect = "5"
+jsonschema = "0.18"
+dirs = "5"
+glob = "0.3"
+percent-encoding = "2"
+tokio-util = "0.7"
+futures = "0.3"
+digest = "0.10"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"
